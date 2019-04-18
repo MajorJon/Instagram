@@ -23,7 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://whispering-cove-95807.herokuapp.com/parse"
             })
         )
-        // Override point for customization after application launch.
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "feedNavigationController")
+            window?.rootViewController = feedNavigationController
+        }
         return true
     }
 
