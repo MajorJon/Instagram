@@ -143,7 +143,7 @@
                                             <outlet property="usernameLabel" destination="XbK-zJ-6sz" id="LsS-3g-IKU"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" id="q1M-hw-bSE" customClass="commentCell" customModule="Instagram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="commentCell" id="q1M-hw-bSE" customClass="commentCell" customModule="Instagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="425" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q1M-hw-bSE" id="swI-2y-EjZ">
@@ -177,6 +177,28 @@
                                             <outlet property="commentLabel" destination="moU-kc-yvn" id="mku-hU-GZs"/>
                                             <outlet property="nameLabel" destination="Igf-ex-Nmq" id="Tv6-Rd-MEu"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="addACommentCell" id="vna-Jn-J5j">
+                                        <rect key="frame" x="0.0" y="469" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vna-Jn-J5j" id="j2W-ac-J3d">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTj-gM-zM4">
+                                                    <rect key="frame" x="16" y="8" width="351" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zTj-gM-zM4" firstAttribute="top" secondItem="j2W-ac-J3d" secondAttribute="top" constant="8" id="Jxo-f0-TGF"/>
+                                                <constraint firstAttribute="bottom" secondItem="zTj-gM-zM4" secondAttribute="bottom" constant="8" id="bsp-u6-bhL"/>
+                                                <constraint firstItem="zTj-gM-zM4" firstAttribute="leading" secondItem="j2W-ac-J3d" secondAttribute="leading" constant="16" id="nzf-oq-cAt"/>
+                                                <constraint firstAttribute="trailing" secondItem="zTj-gM-zM4" secondAttribute="trailing" constant="8" id="sXH-AG-IRB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
